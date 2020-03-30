@@ -1,0 +1,52 @@
+body {
+	background-color: lightgrey;
+	font-family: Helvetica;
+}
+
+form {
+	/*text-align: center;*/
+	background-color: purple;
+	width: 50%;
+	border: 3px solid purple;
+	border-radius: 5px;
+	box-shadow: 0 0 75px 2px black;
+	margin: 75px auto;
+	padding: 10px;
+	color: lightgrey;
+}
+form > h1 {
+	text-align: center;
+}
+.in {
+	display: block;
+	margin-left: 38%;
+	font-size: 20px;
+	text-decoration-style: none;
+	list-style: none;
+}
+
+.enter {
+	display: block;
+	margin: 0 auto;
+}
+
+.container {
+  width: 50%;
+  padding: 10px;
+  margin: auto;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 900px){
+
+
+	form > h1 {
+		font-size: 15px;
+	}
+	.container {
+		width: 80%;
+	}
+	.in {
+		margin: 0;
+	}
+}

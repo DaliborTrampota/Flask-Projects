@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulář</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/form.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="container">
+		<h1>Co vám chutná nejvíce:</h1><br>
+		<form method="POST" action="/">
+			<div class="in">
+		        {{ form.csrf_token }}
+		        {{ form.vote() }}
+	    	</div>
+	        <input class="enter" type="submit" value="Hlasovat">
+	    </form>
+		<!--<form action="/results">
+			<h1>Co vám chutná nejvíce:</h1><br>
+
+			<div class="in">
+				<input type="radio" name="drink" value="limonade" checked>Limonáda<br>
+				<input type="radio" name="drink" value="tea">Čaj<br>
+				<input type="radio" name="drink" value="beer">Pivo<br>
+				<input type="radio" name="drink" value="wine">Víno<br>
+				<br><br>
+			</div>
+				<input class="enter" type="submit" value="Submit">
+		</form>-->
+	</div>
+</body>
+</html>

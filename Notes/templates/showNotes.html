@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poznámkovník</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/showNotes.css">
+</head>
+<body>
+<div class="container">
+    <h1>Poznámky</h1>
+    <div class="flexBox">
+        {% for note in notes %}
+            <div class="noteFlex">
+                <div class="inf">
+                    <a id="del" href="/del/{{ note[0] }}">Del</a>
+                    <p>{{note[2]}}</p>
+                </div>
+                <p class="note">
+                    {% autoescape false %}
+                    {{note[1]}}
+                    {% endautoescape %}
+                </p>
+                <a id="edit" href="/poznamka/upravit/{{ note[0] }}">Edit</a>
+            </div>
+        {% endfor %}
+    </div>
+    <a class="myButton" href="/poznamka/vlozit">Vložit poznámku</a>
+</div>
+</body>
+</html>

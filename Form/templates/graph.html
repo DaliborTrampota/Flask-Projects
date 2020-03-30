@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulář</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/graph.css">
+	<meta charset="utf-8">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</head>
+<body>
+	<div style="max-width: 800px; margin: 50px auto;"><canvas id="myChart" width="1600" height="900"></canvas></div>
+    <script>
+    	var games = [1];
+		// For drawing the lines
+		var beer = 		[{{beer}}];
+		var limonade = 	[{{limonade}}];
+		var wine = 		[{{wine}}];
+		var tea =  		[{{tea}}];
+
+		var ctx = document.getElementById("myChart");
+		var myChart = new Chart(ctx, {
+		  type: 'pie',
+		  maxTicksLimit: 13,
+		  data: {
+		    datasets: [
+		      { 
+		        data: [beer, wine, limonade, tea],
+		        backgroundColor: ["#0074D9", "#FF4136", "#2ECC40", "#FF851B"]
+		      }],
+		    labels:[
+		    	"Pivo",
+		    	"Víno",
+		    	"Limonáda",
+		    	"Čaj"
+		    ]
+		  }
+		});
+    </script>
+
+	<a href="/">Zpět na hlasování</a>
+</body>
+</html>

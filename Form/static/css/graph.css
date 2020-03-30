@@ -1,0 +1,16 @@
+a {
+	border-radius:5px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color: #000000;
+	font-family: Helvetica;
+	font-size:20px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}

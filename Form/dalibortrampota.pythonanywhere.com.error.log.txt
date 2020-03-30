@@ -1,0 +1,378 @@
+2020-02-04 07:24:37,068: Error running WSGI application
+2020-02-04 07:24:37,072: ModuleNotFoundError: No module named 'flask_session'
+2020-02-04 07:24:37,073:   File "/var/www/dalibortrampota_pythonanywhere_com_wsgi.py", line 16, in <module>
+2020-02-04 07:24:37,073:     from app import app as application  # noqa
+2020-02-04 07:24:37,073: 
+2020-02-04 07:24:37,073:   File "/home/DaliborTrampota/mysite/app.py", line 3, in <module>
+2020-02-04 07:24:37,074:     from flask_session import Session
+2020-02-04 07:24:37,074: ***************************************************
+2020-02-04 07:24:37,074: If you're seeing an import error and don't know why,
+2020-02-04 07:24:37,075: we have a dedicated help page to help you debug: 
+2020-02-04 07:24:37,075: https://help.pythonanywhere.com/pages/DebuggingImportError/
+2020-02-04 07:24:37,075: ***************************************************
+2020-02-04 07:24:37,168: Error running WSGI application
+2020-02-04 07:24:37,168: ModuleNotFoundError: No module named 'flask_session'
+2020-02-04 07:24:37,169:   File "/var/www/dalibortrampota_pythonanywhere_com_wsgi.py", line 16, in <module>
+2020-02-04 07:24:37,169:     from app import app as application  # noqa
+2020-02-04 07:24:37,169: 
+2020-02-04 07:24:37,169:   File "/home/DaliborTrampota/mysite/app.py", line 3, in <module>
+2020-02-04 07:24:37,169:     from flask_session import Session
+2020-02-04 07:24:37,170: ***************************************************
+2020-02-04 07:24:37,170: If you're seeing an import error and don't know why,
+2020-02-04 07:24:37,170: we have a dedicated help page to help you debug: 
+2020-02-04 07:24:37,171: https://help.pythonanywhere.com/pages/DebuggingImportError/
+2020-02-04 07:24:37,171: ***************************************************
+2020-02-04 07:24:43,782: Error running WSGI application
+2020-02-04 07:24:43,783: ModuleNotFoundError: No module named 'flask_session'
+2020-02-04 07:24:43,783:   File "/var/www/dalibortrampota_pythonanywhere_com_wsgi.py", line 16, in <module>
+2020-02-04 07:24:43,784:     from app import app as application  # noqa
+2020-02-04 07:24:43,784: 
+2020-02-04 07:24:43,784:   File "/home/DaliborTrampota/mysite/app.py", line 3, in <module>
+2020-02-04 07:24:43,784:     from flask_session import Session
+2020-02-04 07:24:43,784: ***************************************************
+2020-02-04 07:24:43,785: If you're seeing an import error and don't know why,
+2020-02-04 07:24:43,785: we have a dedicated help page to help you debug: 
+2020-02-04 07:24:43,785: https://help.pythonanywhere.com/pages/DebuggingImportError/
+2020-02-04 07:24:43,785: ***************************************************
+2020-02-04 07:26:22,334: Error running WSGI application
+2020-02-04 07:26:22,338: ModuleNotFoundError: No module named 'flask_session'
+2020-02-04 07:26:22,338:   File "/var/www/dalibortrampota_pythonanywhere_com_wsgi.py", line 16, in <module>
+2020-02-04 07:26:22,338:     from app import app as application  # noqa
+2020-02-04 07:26:22,339: 
+2020-02-04 07:26:22,339:   File "/home/DaliborTrampota/mysite/app.py", line 3, in <module>
+2020-02-04 07:26:22,339:     from flask_session import Session
+2020-02-04 07:26:22,339: ***************************************************
+2020-02-04 07:26:22,339: If you're seeing an import error and don't know why,
+2020-02-04 07:26:22,340: we have a dedicated help page to help you debug: 
+2020-02-04 07:26:22,340: https://help.pythonanywhere.com/pages/DebuggingImportError/
+2020-02-04 07:26:22,340: ***************************************************
+2020-02-04 07:26:23,840: Error running WSGI application
+2020-02-04 07:26:23,841: ModuleNotFoundError: No module named 'flask_session'
+2020-02-04 07:26:23,841:   File "/var/www/dalibortrampota_pythonanywhere_com_wsgi.py", line 16, in <module>
+2020-02-04 07:26:23,842:     from app import app as application  # noqa
+2020-02-04 07:26:23,842: 
+2020-02-04 07:26:23,842:   File "/home/DaliborTrampota/mysite/app.py", line 3, in <module>
+2020-02-04 07:26:23,842:     from flask_session import Session
+2020-02-04 07:26:23,843: ***************************************************
+2020-02-04 07:26:23,843: If you're seeing an import error and don't know why,
+2020-02-04 07:26:23,843: we have a dedicated help page to help you debug: 
+2020-02-04 07:26:23,844: https://help.pythonanywhere.com/pages/DebuggingImportError/
+2020-02-04 07:26:23,844: ***************************************************
+2020-02-04 07:26:25,562: Error running WSGI application
+2020-02-04 07:26:25,563: ModuleNotFoundError: No module named 'flask_session'
+2020-02-04 07:26:25,563:   File "/var/www/dalibortrampota_pythonanywhere_com_wsgi.py", line 16, in <module>
+2020-02-04 07:26:25,563:     from app import app as application  # noqa
+2020-02-04 07:26:25,563: 
+2020-02-04 07:26:25,564:   File "/home/DaliborTrampota/mysite/app.py", line 3, in <module>
+2020-02-04 07:26:25,564:     from flask_session import Session
+2020-02-04 07:26:25,564: ***************************************************
+2020-02-04 07:26:25,564: If you're seeing an import error and don't know why,
+2020-02-04 07:26:25,565: we have a dedicated help page to help you debug: 
+2020-02-04 07:26:25,568: https://help.pythonanywhere.com/pages/DebuggingImportError/
+2020-02-04 07:26:25,568: ***************************************************
+2020-02-04 07:26:26,388: Error running WSGI application
+2020-02-04 07:26:26,388: ModuleNotFoundError: No module named 'flask_session'
+2020-02-04 07:26:26,389:   File "/var/www/dalibortrampota_pythonanywhere_com_wsgi.py", line 16, in <module>
+2020-02-04 07:26:26,389:     from app import app as application  # noqa
+2020-02-04 07:26:26,389: 
+2020-02-04 07:26:26,389:   File "/home/DaliborTrampota/mysite/app.py", line 3, in <module>
+2020-02-04 07:26:26,389:     from flask_session import Session
+2020-02-04 07:26:26,389: ***************************************************
+2020-02-04 07:26:26,390: If you're seeing an import error and don't know why,
+2020-02-04 07:26:26,390: we have a dedicated help page to help you debug: 
+2020-02-04 07:27:59,698: Error running WSGI application
+2020-02-04 07:27:59,700: ModuleNotFoundError: No module named 'flask_session'
+2020-02-04 07:27:59,700:   File "/var/www/dalibortrampota_pythonanywhere_com_wsgi.py", line 16, in <module>
+2020-02-04 07:27:59,700:     from app import app as application  # noqa
+2020-02-04 07:27:59,700: 
+2020-02-04 07:27:59,701:   File "/home/DaliborTrampota/mysite/app.py", line 3, in <module>
+2020-02-04 07:27:59,701:     from flask_session import Session
+2020-02-04 07:27:59,701: ***************************************************
+2020-02-04 07:27:59,701: If you're seeing an import error and don't know why,
+2020-02-04 07:27:59,702: we have a dedicated help page to help you debug: 
+2020-02-04 07:27:59,702: https://help.pythonanywhere.com/pages/DebuggingImportError/
+2020-02-04 07:27:59,702: ***************************************************
+2020-02-04 07:28:00,957: Error running WSGI application
+2020-02-04 07:28:00,958: ModuleNotFoundError: No module named 'flask_session'
+2020-02-04 07:28:00,958:   File "/var/www/dalibortrampota_pythonanywhere_com_wsgi.py", line 16, in <module>
+2020-02-04 07:28:00,958:     from app import app as application  # noqa
+2020-02-04 07:28:00,960: 
+2020-02-04 07:28:00,960:   File "/home/DaliborTrampota/mysite/app.py", line 3, in <module>
+2020-02-04 07:28:00,960:     from flask_session import Session
+2020-02-04 07:28:00,960: ***************************************************
+2020-02-04 07:28:00,960: If you're seeing an import error and don't know why,
+2020-02-04 07:28:00,961: we have a dedicated help page to help you debug: 
+2020-02-04 07:28:00,961: https://help.pythonanywhere.com/pages/DebuggingImportError/
+2020-02-04 07:28:00,962: ***************************************************
+2020-03-10 10:00:45,507: Exception on /results [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/DaliborTrampota/mysite/app.py", line 47, in results
+    c.execute("select sum(beer), sum(wine), sum(tea), sum(limonade) from results")
+sqlite3.OperationalError: no such table: results
+2020-03-10 10:00:48,277: Exception on /results [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/DaliborTrampota/mysite/app.py", line 47, in results
+    c.execute("select sum(beer), sum(wine), sum(tea), sum(limonade) from results")
+sqlite3.OperationalError: no such table: results
+2020-03-10 10:00:50,117: Exception on /results [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/DaliborTrampota/mysite/app.py", line 47, in results
+    c.execute("select sum(beer), sum(wine), sum(tea), sum(limonade) from results")
+sqlite3.OperationalError: no such table: results
+2020-03-10 10:00:51,622: Exception on /results [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/DaliborTrampota/mysite/app.py", line 47, in results
+    c.execute("select sum(beer), sum(wine), sum(tea), sum(limonade) from results")
+sqlite3.OperationalError: no such table: results
+2020-03-10 10:00:52,415: Exception on /results [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/DaliborTrampota/mysite/app.py", line 47, in results
+    c.execute("select sum(beer), sum(wine), sum(tea), sum(limonade) from results")
+sqlite3.OperationalError: no such table: results
+2020-03-10 10:01:39,415: Exception on /results [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/DaliborTrampota/mysite/app.py", line 47, in results
+    c.execute("select sum(beer), sum(wine), sum(tea), sum(limonade) from results")
+sqlite3.OperationalError: no such table: results
+2020-03-10 10:01:45,968: Exception on /results [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/DaliborTrampota/mysite/app.py", line 47, in results
+    c.execute("select sum(beer), sum(wine), sum(tea), sum(limonade) from results")
+sqlite3.OperationalError: no such table: results
+2020-03-20 17:38:27,362: Exception on /results [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/DaliborTrampota/mysite/app.py", line 47, in results
+    c.execute("select sum(beer), sum(wine), sum(tea), sum(limonade) from results")
+sqlite3.OperationalError: no such table: results
+2020-03-20 17:47:39,232: Exception on /results [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/DaliborTrampota/mysite/app.py", line 47, in results
+    c.execute("select sum(beer), sum(wine), sum(tea), sum(limonade) from results")
+sqlite3.OperationalError: no such table: results
+2020-03-20 17:47:56,436: Exception on /results [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/DaliborTrampota/mysite/app.py", line 47, in results
+    c.execute("select sum(beer), sum(wine), sum(tea), sum(limonade) from results")
+sqlite3.OperationalError: no such table: results
+2020-03-20 17:47:56,708: Exception on /results [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/DaliborTrampota/mysite/app.py", line 47, in results
+    c.execute("select sum(beer), sum(wine), sum(tea), sum(limonade) from results")
+sqlite3.OperationalError: no such table: results
+2020-03-20 17:50:04,200: Exception on /results [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/DaliborTrampota/mysite/app.py", line 47, in results
+    c.execute("select sum(beer), sum(wine), sum(tea), sum(limonade) from results")
+sqlite3.OperationalError: no such table: results
+2020-03-26 16:38:49,194: Exception on /results [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/DaliborTrampota/mysite/flask_app.py", line 49, in results
+    c.execute("select sum(beer), sum(wine), sum(tea), sum(limonade) from results")
+sqlite3.OperationalError: no such table: results
+2020-03-26 16:43:20,915: Exception on /results [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/DaliborTrampota/mysite/flask_app.py", line 49, in results
+    c.execute("select sum(beer), sum(wine), sum(tea), sum(limonade) from results")
+sqlite3.OperationalError: no such table: results
+2020-03-26 16:44:09,484: Exception on /results [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/DaliborTrampota/mysite/flask_app.py", line 49, in results
+    c.execute("select sum(beer), sum(wine), sum(tea), sum(limonade) from results")
+sqlite3.OperationalError: no such table: results
+2020-03-26 17:56:12,846: Exception on /results [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/DaliborTrampota/mysite/flask_app.py", line 49, in results
+    c.execute("select sum(beer), sum(wine), sum(tea), sum(limonade) from results")
+sqlite3.OperationalError: no such table: results
