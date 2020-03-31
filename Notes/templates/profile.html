@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poznámkovník</title>
     <link rel="stylesheet" type="text/css" href="/static/css/showNotes.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/logreg.css">
 </head>
 <body>
 
 <div class="menu">
     <a id="logout" href="/{{user}}/logout" class="myButton">{{logout}}</a>
-    <a id="prof" href="/{{user}}/profile" class="myButton">{{user}}</a>
-    <a id="login" href="/login" class="myButton">{{login}}</a>
-    <a id="reg" href="/register" class="myButton">{{register}}</a>
-    <h1>Poznámky</h1>
+    <p style="font-weight: bold; font-size: 1.2em; margin: 0;">{{date}}</p>
+    <h1>{{user}}</h1>
 </div>
 <div class="container">
     <div class="flexBox">
@@ -36,6 +35,7 @@
         {% endfor %}
     </div>
     <a class="myButton" id="addNote" href="/poznamka/vlozit">Vložit poznámku</a>
+    <a href="/" class="myButton" id="down">Poznámky</a>
 </div>
 </body>
 </html>

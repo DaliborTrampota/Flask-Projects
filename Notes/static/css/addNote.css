@@ -4,8 +4,20 @@ body {
 	overflow: hidden;
 }
 
-
-
+.private {
+	position: absolute;
+	bottom: 50px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	margin: 0 auto;
+}
+#text {
+	font-family:Arial;
+	bottom: 60px;
+	color:#666666;
+	font-weight: bold;
+}
 .myButton {
 	box-shadow:inset 0px 1px 0px 0px #ffffff;
 	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);

@@ -12,6 +12,8 @@
 			<div class="box">
 	        	{{ form.csrf_token }}
 	        	{{ form.note(class="textField") }}
+	        	{{ form.private(class="private") }}
+	        	<p class="private" id="text">Veřejné</p>
     		</div>
         	<input class="myButton" type="submit" value="Uložit">
     	</form>
