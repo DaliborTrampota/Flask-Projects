@@ -12,6 +12,91 @@ body {
 	text-align: center;
 	margin: 0 auto;
 }
+
+.radioField {
+	display: flex;
+	list-style-type: none;
+	position: absolute;
+	bottom: 75px;
+	left: 49%;
+	transform: translate(-49%, 0%);
+}
+
+.radioField > li {
+	padding: 5px;
+	margin: 0;
+
+}
+
+li {
+	height: 1rem;
+}
+
+li > label {
+	position: relative;
+	top:-2.25rem;
+	margin: 5px;
+}
+
+li:nth-child(1):hover {
+	border-radius: 10px;
+	background-color: green;
+}
+
+li:nth-child(2):hover {
+	border-radius: 10px;
+	background-color: orange;
+}
+
+li:nth-child(3):hover {
+	border-radius: 10px;
+	background-color: red;
+}
+/*
+li:nth-child(1):active {
+	border-radius: 10px;
+	background-color: green;
+}
+li:nth-child(2):target {
+	border-radius: 10px;
+	background-color: orange;
+}
+
+li:nth-child(3):target {
+	border-radius: 10px;
+	background-color: red;
+}#priority-1:checked {
+	border-radius: 10px;
+	background-color: orange;
+}
+
+#priority-2:checked {
+	border-radius: 10px;
+	background-color: red;
+}
+*/
+li:nth-child(1) > input:checked + label {
+	border-radius: 5px;
+	background-color: green;
+}
+li:nth-child(2) > input:checked + label {
+	border-radius: 5px;
+	background-color: orange;
+}
+li:nth-child(3) > input:checked + label {
+	border-radius: 5px;
+	background-color: red;
+}
+
+
+#priority-0, #priority-1, #priority-2 {
+	opacity: 0;
+	width: 0;
+	height: 0;
+  	position: relative;
+  	cursor: pointer;
+}
+
 #text {
 	font-family:Arial;
 	bottom: 60px;

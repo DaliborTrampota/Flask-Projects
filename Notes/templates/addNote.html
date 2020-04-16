@@ -8,11 +8,12 @@
 <body>
 	<div class="container">
 		<h1>Napiš svoji myšlenku</h1><br>
-		<form method="POST" action="/poznamka/vlozit">
+		<form method="POST">
 			<div class="box">
 	        	{{ form.csrf_token }}
 	        	{{ form.note(class="textField") }}
 	        	{{ form.private(class="private") }}
+	        	{{ form.priority(class="radioField") }}
 	        	<p class="private" id="text">Veřejné</p>
     		</div>
         	<input class="myButton" type="submit" value="Uložit">

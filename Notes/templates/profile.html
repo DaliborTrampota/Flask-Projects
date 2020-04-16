@@ -28,6 +28,7 @@
                     {% endautoescape %}
                 </p>
                 <a id="edit" href="/poznamka/upravit/{{ note[0] }}">{{note[4][1]}}</a>
+                <span class="dot {{note[5]}}"></span>
                     {% if note[3] == 1 %}
                         <img id="lock" src="/static/Img/lock.png">
                     {% endif %}

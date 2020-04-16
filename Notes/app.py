@@ -4,7 +4,7 @@ from flask import Flask, render_template, redirect, session
 from flask_wtf import FlaskForm
 
 from wtforms.validators import DataRequired, length
-from wtforms import TextAreaField, BooleanField, StringField
+from wtforms import TextAreaField, BooleanField, StringField, RadioField
 from wtforms.widgets import PasswordInput
 
 from flask_session.__init__ import Session
@@ -36,6 +36,7 @@ logging.basicConfig(level=logging.DEBUG)
 class noteForm(FlaskForm):
 	note = TextAreaField('Poznámka', validators=[DataRequired(), length(max=250)])
 	private = BooleanField('Private?')
+	priority = RadioField("Priorita", choices=[('Nízká', '<br>Nízká'), ('Normální', '<br>Normální'), ('Vysoká', '<br>Vysoká')])
 
 class logForm(FlaskForm):
 	username = StringField("name", validators=[DataRequired()], render_kw={"placeholder": "  Jméno"})
@@ -93,6 +94,7 @@ def addNote():
 	form = noteForm()
 	noteText = form.note.data
 	isPublic = form.private.data
+	priority = form.priority.data
 
 	logged = False
 	if not 'logged' in session:
@@ -106,15 +108,13 @@ def addNote():
 
 	if form.validate_on_submit():
 
-		if isPublic and logged:
-			name = session['user']
-		elif not isPublic and logged:
+		if logged:
 			name = session['user']
 		else:
 			name = "public"
 			isPublic = True
 
-		sqliteCMD("INSERT INTO note(body, private, owner) VALUES (?,?,?)", (noteText, int(not isPublic), name), False, pathNotesDB)
+		sqliteCMD("INSERT INTO note(body, private, owner, priority) VALUES (?,?,?,?)", (noteText, int(not isPublic), name, priority), False, pathNotesDB)
 		return redirect('/')
 
 	return render_template('addNote.html', form=form)
@@ -145,7 +145,7 @@ def showNotes():
 			logout = ""
 			user = ""
 
-	notesDB = sqliteCMD("SELECT rowid, body, kdy, private, owner FROM note WHERE owner=? or private=0 ORDER BY kdy DESC", (name,), True, pathNotesDB)
+	notesDB = sqliteCMD("SELECT rowid, body, kdy, private, owner, priority FROM note WHERE owner=? or private=0 ORDER BY kdy DESC", (name,), True, pathNotesDB)
 	notes = [list(i) for i in notesDB]
 
 	for i in range(len(notesDB)):
@@ -156,6 +156,7 @@ def showNotes():
 			notes[i][4] = ["Del", "Edit"]
 		else:
 			notes[i][4] = ["",""]
+		notes[i][5] = notesDB[i][5]
 	
 
 	return render_template('showNotes.html', notes=notes, login=login, register=register, logout=logout, user=user)
@@ -171,21 +172,46 @@ def editNote(noteID):
 	"""Upravý vybranou poznámku"""
 	form = noteForm()
 	noteText = form.note.data
+	isPublic = form.private.data
+	priority = form.priority.data
+
+	logged = False
+	if not 'logged' in session:
+		name = "public"
+		isPublic = True
+	else:
+		logged = session['logged']
+		if not logged:
+			name = "public"
+			isPublic = True
+
+	if form.validate_on_submit():
+
+		if isPublic and logged:
+			name = session['user']
+		elif not isPublic and logged:
+			name = session['user']
+		else:
+			name = "public"
+			isPublic = True
 
 	note = sqliteCMD("SELECT body FROM note WHERE rowid=?", (noteID,), True, pathNotesDB)
 	form.note.data = list(note)[0][0]
 
 	if form.validate_on_submit():
-		sqliteCMD("UPDATE note set body = (?) where rowid=?", (noteText,noteID), False, pathNotesDB)
+		sqliteCMD("UPDATE note SET body=? WHERE rowid=?", (noteText, noteID), False, pathNotesDB)
+		sqliteCMD("UPDATE note SET private=? WHERE rowid=?", (int(not isPublic), noteID), False, pathNotesDB)
+		#sqliteCMD("UPDATE note SET owner=? WHERE rowid=?", (name, noteID), False, pathNotesDB)
+		sqliteCMD("UPDATE note SET priority=? WHERE rowid=?", (priority, noteID), False, pathNotesDB)
 		return redirect('/')
 
-	return render_template('editNote.html', form=form, noteID=noteID)
+	return render_template('addNote.html', form=form, noteID=noteID)
 
 
 @app.route('/<string:user>/profile', methods=['GET', 'POST'])
 def profile(user):
 
-	notesDB = sqliteCMD("SELECT rowid, body, kdy, private, owner FROM note WHERE owner=? ORDER by kdy DESC", (user,), True, pathNotesDB)
+	notesDB = sqliteCMD("SELECT rowid, body, kdy, private, owner, priority FROM note WHERE owner=? ORDER by kdy DESC", (user,), True, pathNotesDB)
 	dateDB = list(sqliteCMD("SELECT regDate FROM users WHERE name=?", (user,), True, pathUserDB))
 
 	dateRaw = dateDB[0][0][:-3].replace(" ", "-").replace(":", "-").split("-")
@@ -196,6 +222,7 @@ def profile(user):
 		date = notesDB[i][2][:-3].replace(" ", "-").replace(":", "-").split("-")
 		notes[i][2] = getFormatedTime(date[0], date[1], date[2], date[3], date[4])
 		notes[i][4] = ["Del", "Edit"]
+		notes[i][5] = notesDB[i][5]
 
 	date = getFormatedTime(dateRaw[0], dateRaw[1], dateRaw[2], dateRaw[3], dateRaw[4])
 
