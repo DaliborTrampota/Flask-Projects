@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kámen Nůžky Papír<img src="" alt="" sizes="" srcset=""></title>
+    <script>
+        window.onload = function() {
+            let sResult = document.getElementById("winner");
+            let classToAdd = sResult.innerHTML == 'Výhra' ? 'win' : sResult.innerHTML == 'Prohra' ? 'lost' : 'tie';
+            document.getElementById("winner").className = classToAdd;
+        }
+    </script>
+</head>
+<body>
+    <h1 class="gameTitle">Kámen, Nůžky, Papír</h1>
+    <div class="menu">
+        <div class="final">
+            Počítač vs Hráč
+            <br>
+            <img src= "/static/{{pc}}.jpg" width="128">
+            <img src= "/static/{{player}}.jpg" width="128">
+            <br>
+            <span id="winner">{{ winner }}</span>
+            <br><br>
+            <a href="/" class="over">Hrát znovu</a>
+        </div>
+    </div>
+</body>
+</html>
