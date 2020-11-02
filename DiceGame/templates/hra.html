@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Kostky</title>
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="/static/custom.css">
+
+        </head>
+    <body>
+        <h1>Hra Kostky</h1>
+        <br>
+        <img src="/static/pics/dice.jpg" width=50%>
+        <br>
+        <p class="center">
+            <img src="/static/pics/{{ plr }}.png">
+        <p class="center">
+            <img src="/static/pics/{{ pc }}.png">
+        </p>
+        <br>
+            <h3 class="player">Hráč: {{ plr }}</h3>
+            <h3 class="player">Počítač: {{ pc }}</h3>
+        <h2 class="result"> {{ result }} </h2>
+        <br>
+        <button class="button" onCLick="window.location.reload();">Hrát Znovu</button>
+    </body>
+</html>
