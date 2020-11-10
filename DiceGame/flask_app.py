@@ -17,5 +17,10 @@ def diceThrow():
 
     return render_template('hra.html', plr=plr, pc=pc, result=result)
 
+
+@app.route('/stats')
+def stats():
+    return render_template('graf.html');
+
 if __name__ == '__main__':
     app.run()

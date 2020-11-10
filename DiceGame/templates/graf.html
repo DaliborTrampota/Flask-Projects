@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Kostky</title>
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="/static/custom.css">
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js'></script>
+        </head>
+    <body>
+
+        <canvas id="myCanvas" style='width:400px;'></canvas>
+        <script>
+            window.onload = function() {
+                let c = document.getElementById("myCanvas");
+                let ctx = c.getContext("2d");
+                let pc = window.localStorage.getItem('pc') || 1;
+                let plr = window.localStorage.getItem('plr') || 0
+                let graph = new Chart(ctx, {
+                    type: 'pie',
+                    data:{
+                        datasets: [{
+                            backgroundColor:['#808080','#FFFFFF'],
+                            data: [pc, plr]
+                        }],
+                        labels: [
+                            'Počítač',
+                            'Hráč'
+                        ],
+                    },
+                    options: {
+                        maintainAspectRatio: true
+                    }
+                });
+
+            }
+        </script>
+        <a class="button" href='/'>Zpět</button>
+    </body>
+</html>

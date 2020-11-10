@@ -4,7 +4,25 @@
             <title>Kostky</title>
             <meta charset="utf-8">
             <link rel="stylesheet" href="/static/custom.css">
-
+            <script>
+                window.onload = function() {
+                    let iScorePlr = window.sessionStorage.getItem('plr') || 0;
+                    let iScorePc = window.sessionStorage.getItem('pc') || 0;
+                    let iGlobalWinsPlr = window.localStorage.getItem('plr') || 0
+                    let iGlobalWinsPc = window.localStorage.getItem('pc') || 0
+                    if({{ plr }} > {{ pc }}){
+                        iScorePlr++;
+                        iGlobalWinsPlr++;
+                        window.sessionStorage.setItem('plr', iScorePlr);
+                        window.localStorage.setItem('plr', iGlobalWinsPlr);
+                    }else if({{ plr }} < {{ pc }}){
+                        iScorePc++;
+                        iGlobalWinsPc++;
+                        window.sessionStorage.setItem('pc', iScorePc);
+                        window.localStorage.setItem('pc', iGlobalWinsPc);
+                    }
+                }
+            </script>
         </head>
     <body>
         <h1>Hra Kostky</h1>
@@ -22,5 +40,6 @@
         <h2 class="result"> {{ result }} </h2>
         <br>
         <button class="button" onCLick="window.location.reload();">Hrát Znovu</button>
+        <a class="button" href='/stats'>Graf</button>
     </body>
 </html>
